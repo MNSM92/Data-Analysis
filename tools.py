@@ -30,7 +30,7 @@ def P(text, color):
     print(f"{color_codes[color]}{text}{color_codes['reset']}")
 
 # print important information
-def show_ii(data):
+def show_df_info(data):
     P(f"Head: \n{data.head()}", 'red')
     P(f"Shape: \n{data.shape}", 'purple')
     P(f"info: \n{data.info()}", 'green')
